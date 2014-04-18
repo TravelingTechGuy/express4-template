@@ -25,4 +25,5 @@ Main features of this template:
 3. Separation or models, views, and routes
 4. Separation of routers
 5. Errors router
-6. Separate debug calls in every module - run `npm start` to get all debug messages
+6. Errors returned in JSON format if the request header contains `Accept: application/json`
+7. Separate debug calls in every module - run `npm start` to get all debug messages
