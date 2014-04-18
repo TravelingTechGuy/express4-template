@@ -15,6 +15,7 @@
     "body-parser": "latest",
     "compression": "latest",
     "method-override": "latest",
+    "express-session": "latest",
     "debug": "latest",
     "ejs": "latest"
   }

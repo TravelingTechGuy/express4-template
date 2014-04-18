@@ -10,6 +10,7 @@ var express = require('express'),
 	favicon = require('static-favicon'),
 	logger = require('morgan'),
 	cookieParser = require('cookie-parser'),
+	session = require('express-session'),
 	bodyParser = require('body-parser'),
 	compress = require('compression'),
 	methodOverride = require('method-override');
@@ -27,6 +28,7 @@ app.use(compress());													//gzip
 app.use(bodyParser.json());												//parse body json POST requests
 app.use(bodyParser.urlencoded());										//parse body POST requests
 app.use(cookieParser());												//parse cookies in header
+app.use(session({ secret: 'keyboard cat', key: 'sid', cookie: { secure: true }}));	//set session with key, secret, and cookie settings
 app.use(logger('dev'));													//log every request to console
 app.use(methodOverride());												//simulate DELETE and PUT
 app.disable('x-powered-by');											//remove Express from return header

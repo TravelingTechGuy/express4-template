@@ -18,10 +18,11 @@ Main features of this template:
 2. Express modules used:
 	1. Body Parser
 	2. Cookie Parser
-	3. Logger
-	4. Favicon
-	5. Compression
-	6. Method Override
+	3. Session
+	4. Logger
+	5. Favicon
+	6. Compression
+	7. Method Override
 3. Separation or models, views, and routes
 4. Separation of routers
 5. Errors router
