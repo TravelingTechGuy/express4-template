@@ -1,0 +1,21 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "DEBUG=* node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.0.0",
+    "static-favicon": "latest",
+    "morgan": "latest",
+    "cookie-parser": "latest",
+    "body-parser": "latest",
+    "compression": "latest",
+    "method-override": "latest",
+    "debug": "latest",
+    "ejs": "latest"
+  }
+}
