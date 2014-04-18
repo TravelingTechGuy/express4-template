@@ -24,12 +24,12 @@ app.set('views', path.join(__dirname, 'views'));						//views folder
 app.set('view engine', 'ejs');											//set view engine to EJS
 app.use(favicon(path.join(__dirname, 'public/images/favicon.ico')));	//handle favicon request - remove path to use default Express icon
 app.use(express.static(path.join(__dirname, 'public')));				//set the static files location /public/img will be /img for users
+app.use(logger('dev'));													//log every request to console
 app.use(compress());													//gzip
 app.use(bodyParser.json());												//parse body json POST requests
 app.use(bodyParser.urlencoded());										//parse body POST requests
 app.use(cookieParser());												//parse cookies in header
 app.use(session({ secret: 'keyboard cat', key: 'sid', cookie: { secure: true }}));	//set session with key, secret, and cookie settings
-app.use(logger('dev'));													//log every request to console
 app.use(methodOverride());												//simulate DELETE and PUT
 app.disable('x-powered-by');											//remove Express from return header
 
