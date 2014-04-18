@@ -10,4 +10,4 @@ To use this template, follow these steps:
 	$ npm install
 	$ node app
 
-If you have `nodemon` installed, just type `nodemon`.
+If you have [nodemon](https://github.com/remy/nodemon/) installed, just type `nodemon`.
