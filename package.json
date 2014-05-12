@@ -9,7 +9,7 @@
   "main": "app.js",
   "dependencies": {
     "express": "~4.0.0",
-    "static-favicon": "latest",
+    "serve-favicon": "latest",
     "morgan": "latest",
     "cookie-parser": "latest",
     "body-parser": "latest",

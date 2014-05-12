@@ -7,7 +7,7 @@
 //express 4 and new modules
 var express = require('express'),
 	app = express(),
-	favicon = require('static-favicon'),
+	favicon = require('serve-favicon'),
 	logger = require('morgan'),
 	cookieParser = require('cookie-parser'),
 	session = require('express-session'),
